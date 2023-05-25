@@ -1,0 +1,112 @@
+
+*{
+    transition: 0.4s linear;
+}
+
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+.card{
+    width: 300px;
+    background: #494949;
+    box-shadow: 0px 0px 10px #1d1d1d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: #d0d0d0;
+    text-align: center;
+}
+
+.card img{
+    width: 30%;
+    display: flex;
+    border-radius: 50%;
+    border: 4px solid #494949;
+    margin-top: -40px;
+    box-shadow: 0px 0px 10px #1d1d1d;
+}
+
+.card .card-title{
+    letter-spacing: 2px;
+    font-size: 16px !important;
+    color: #fff;
+}
+
+
+.card .card-text{
+    letter-spacing: 1px;
+    overflow: hidden;
+    height: 0px;
+}
+
+.card:hover  .card-text{
+    font-size: 14px !important;
+    height: 100px !important;
+}
+
+.card .card-text-sm{
+    letter-spacing: 1px;
+    font-size: 12px;
+    font-size: 0px;
+}
+
+
+.card:hover  .card-text-sm{
+    font-size: 12px !important;
+}
+
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.icons .icon{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+.icons .icon:nth-child(1):hover{
+    background: linear-gradient(to right, 
+    rgb(15, 147, 255) , rgb(8, 0, 255));
+}
+
+.icons .icon:nth-child(2):hover{
+    background: linear-gradient(to right,
+     rgb(104, 187, 255) , rgb(76, 255, 252));
+}
+
+.icons .icon:nth-child(3):hover{
+    background: linear-gradient(to right,
+     rgb(104, 255, 127) , rgb(0, 173, 40));
+}
+
+.icons .icon:nth-child(4):hover{
+    background: linear-gradient(to right,
+     rgb(105, 12, 255) , rgb(207, 16, 255));
+}
+
+
+.icons .icon:hover{
+    animation: rotate .8s linear 1;
+}
+
+@keyframes rotate{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
